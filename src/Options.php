@@ -191,10 +191,10 @@ abstract class Options implements ArrayAccess
 
 
     /**
-     * @param $offset
+     * @param mixed $offset
      * @return mixed|null
      */
-    public function offsetGet($offset)
+    public function offsetGet(mixed $offset): mixed
     {
         return $this->data[ $offset ] ?? null;
     }
