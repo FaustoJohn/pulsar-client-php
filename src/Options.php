@@ -201,22 +201,22 @@ abstract class Options implements ArrayAccess
 
 
     /**
-     * @param $offset
-     * @param $value
+     * @param mixed $offset
+     * @param mixed $value
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet(mixed $offset, mixed $value): void
     {
         $this->data[ $offset ] = $value;
     }
 
 
     /**
-     * @param $offset
+     * @param mixed $offset
      * @return void
      * @throws OptionsException
      */
-    public function offsetUnset($offset)
+    public function offsetUnset(mixed $offset): void
     {
         throw new OptionsException('Prohibit deletion');
     }
