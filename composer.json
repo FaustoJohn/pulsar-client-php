@@ -1,5 +1,5 @@
 {
-	"name": "ikilobyte/pulsar-client-php",
+	"name": "tia/pulsar-client-php",
 	"description": "PHP Native Client library for Apache Pulsar",
 	"type": "library",
 	"license": "MIT",
